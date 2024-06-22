@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="icon" href="picture/bitmap.svg">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mextez</title>
+<!----------------------------------------------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!----------------------------------------------------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!----------------------------------------------------------->
+</head>
+
+<body>
+<!----------------------------------------------------------->
+<div class="ad-space">
+  <!-- Ad network script will inject the ad content here -->
+</div>
+
+<header class="header">
+  <a href="#" class="logo">
+      <img src="picture/bitmap.svg" alt="Logo">
+      <span class="brand-name">Mextez</span>
+  </a>
+
+  <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="startup.html">Startup</a>
+      <a href="nature.html">Nature</a>
+      <a href="technology.html">Technology</a>
+      <a href="culture.html">Culture</a>
+      <a href="travel.html">Travel</a>
+  </nav>
+  <!------------------------------------------------------>
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Search blog posts...">
+</div>
+<div id="results-container" class="hidden"></div>
+<div id="alert-container" class="hidden">
+    <p>Content not found. Please use the <a href="contact.html">contact page</a> to send your suggestion to the creator.</p>
+</div>
+
+  <!------------------------------------------------------>
+
+ 
+
+  <div class="icon">
+      <div class="fa fa-bars" id="menu-btn"></div>
+      <div class="fa fa-moon" id="dark-mode-btn"></div>
+  </div>
+</header>
+
+<!------------------------------------------------------------------->
+
+    <!-- Sub-heading Section -->
+    <div class="sub-heading-container">
+      <h2 class="animated-sub-heading">Culture</h2>
+      <p class="animated-paragraph">Immerse yourself in Africa's rich cultural heritage. Uncover stories, traditions, and contemporary artistic expressions that define the continent.</p>
+  </div>
+
+    <!-- Featured Section -->
+    <div class="featured-container">
+        <!-- Main Picture with Sub-heading -->
+        <div class="main-featured">
+            <img src="picture/black.jpg" alt="Main Featured Image">
+            <div class="main-overlay">
+                <h2>Main Blog Topic</h2>
+                <p>A brief description or sub-heading of the main blog topic.</p>
+            </div>
+        </div>
+
+        <!-- Medium Pictures with Sub-heading -->
+        <div class="medium-features">
+            <div class="medium-featured">
+                <img src="picture/eye.jpeg" alt="Medium Featured Image 1">
+                <div class="medium-overlay">
+                    <h3>Medium Blog Topic 1</h3>
+                    <p>A brief description or sub-heading of the medium blog topic 1.</p>
+                </div>
+            </div>
+            <div class="medium-featured">
+                <img src="picture/graduate.jpg" alt="Medium Featured Image 2">
+                <div class="medium-overlay">
+                    <h3>Medium Blog Topic 2</h3>
+                    <p>A brief description or sub-heading of the medium blog topic 2.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <hr>
+    <!----------------------------------------------------------------->
+    <div class="content-wrapper">
+        <div id="section-1" class="content-section active">
+            <div class="blog-entry">
+                <img src="picture/black.jpg" alt="Sub-topic 1">
+                <h2>Sub-topic 1</h2>
+                <p>Date: 2024-06-18</p>
+                <!---<button class="like-btn" onclick="toggleLike(this, 'item1')">
+                    <i class="fas fa-thumbs-up"></i> <span class="like-count">0</span>
+                </button>--->
+            </div>
+            <div class="blog-entry">
+                <img src="picture/black.jpg" alt="Sub-topic 2">
+                <h2>Sub-topic 2</h2>
+                <p>Date: 2024-06-18</p>
+                <!---<button class="like-btn" onclick="toggleLike(this, 'item1')">
+                    <i class="fas fa-thumbs-up"></i> <span class="like-count">0</span>
+                </button>-->
+            </div>
+        </div>
+        <div id="section-2" class="content-section">
+            <!-- Additional content for button 2 -->
+        </div>
+        <div id="section-3" class="content-section">
+            <!-- No content for button 3 -->
+        </div>
+        <div id="section-4" class="content-section">
+            <!-- Additional content for button 4 -->
+        </div>
+    </div>
+    <div class="navigation-wrapper">
+        <button onclick="displaySection('section-1')">1</button>
+        <button onclick="displaySection('section-2')">2</button>
+        <button onclick="displaySection('section-3')">3</button>
+        <button onclick="displaySection('section-4')">4</button>
+    </div>
+    
+    <hr>
+    
+    <!---------------------------------------------------------------------->
+    <div class="popular-articles">
+      <h3>Most Popular</h3>
+      <ul>
+        <li>
+            <a href="#">The Future of Start-ups in Africa: Innovations and Challenges</a>
+            <span class="post-meta">posted on June 11</span>
+        </li>
+        <li>
+            <a href="#">Tech Integration in African Education Systems</a>
+            <span class="post-meta">posted on June 11</span>
+        </li>
+        <li>
+            <a href="#">Promoting Nature Conservation in African Countries</a>
+            <span class="post-meta">posted on June 11</span>
+        </li>
+        <li>
+            <a href="#">Top Destinations to Visit in Africa 2024</a>
+            <span class="post-meta">posted on June 10</span>
+        </li>
+        <li>
+            <a href="#">Exploring the Rich Cultural Heritage of Africa</a>
+            <span class="post-meta">posted on June 10</span>
+        </li>
+    </ul>
+    
+  </div>
+
+  <!--------------------------------------------------------------------->
+
+       <!-- Footer -->
+       <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Mextez</h3>
+                <p>Exploring Startups, Nature, Technology, Culture, and Travel in Africa. We bring you the latest insights and stories from across the continent, highlighting the innovations and traditions that make Africa unique.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="startup.html">Startups</a></li>
+                    <a href="javascript:void(0)" onclick="showMessage()">Research and Insights</a>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="culture.html">Culture</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.pinterest.com/yourpage"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mextez. All rights reserved.</p>
+        </div>
+    </footer>      
+
+  <script src="script.js"></script>
+  <script src="search.js"></script>
+</body>
+</html>
